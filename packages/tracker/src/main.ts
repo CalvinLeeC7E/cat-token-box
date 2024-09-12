@@ -14,6 +14,7 @@ async function bootstrap() {
     .setLicense('MIT License', 'https://opensource.org/licenses/MIT')
     .setContact('CAT Protocol', 'https://catprotocol.org', '')
     .addServer(`https://tracker.catprotocol.org/api`)
+    .addServer(`https://cat-fractalbitcoin.coder3.xyz/api`)
     .addServer(`http://127.0.0.1:${process.env.API_PORT || 3000}/api`)
     .build();
   const swaggerDocument = SwaggerModule.createDocument(app, swaggerConfig);
